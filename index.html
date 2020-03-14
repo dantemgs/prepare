@@ -1,13 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Les5</title>
 </head>
 <body>
-
+<div class="container">
+    <p>1. Что такое &lt;ol&gt;, &lt;ul&gt; и &lt;li&gt;?</p>
+    <p>&lt;ol&gt; - это ordered list, нумерованный список<br>
+        &lt;ul&gt; - это unordered list, ненумерованный список <br>
+        &lt;li&gt; - это элемент списка</p>
+    <br>
+    <p>2. Сверстать сложную таблицу с объединением строк и столбцов.</p>
+    <table class="table1">
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <!--            <td>6</td>-->
+        </tr>
+        <tr>
+            <td colspan="3">7</td>
+            <!--            <td>8</td>-->
+            <!--            <td>9</td>-->
+        </tr>
+    </table>
+    <br>
+    <p>3. В каком регистре лучше писать HTML-код?</p>
+    <p>Маленькими буквами</p>
+    <br>
+    <p>4. Как убрать синюю рамку вокруг картинки-ссылки?</p>
+    <a class="link" href="#">
+        <img src="https://www.megaindex.org/media/upload/thumb/b383fbca2cb6e684c3307f5c061566e0a76a2668.png"
+             alt="link-img" class="link-img">
+    </a>
+    <p class="property">Добавить селектору картинки свойство <span>border: none</span></p>
+    <br>
+    <p>5. Обязательно ли писать alt в &lt;img&gt;?</p>
+    <p>Да</p>
+    <br>
+    <p>6. Что такое html-entities?</p>
+    <p>Это сущности, которые ссылаются на большое количество символов, предопределенных в html. <br>
+        Начинаются они со значка амперсанда затем с кодового слова символа &copy; или # и номер символа &#169;. Точка с
+        запятой означает конец сущности</p>
+    <br>
+    <p>7. Как убрать подчеркивание для всех ссылок на странице?</p>
+    <p class="property">Нужно всем селекторам тега &lt;a&gt; добавить свойство <span>text-decoration: none;</span></p>
+    <a href="#">Ссылка</a>
+    <br>
+    <br>
+    <p>8. Что делает свойство clear?</p>
+    <p>Запрещает обтегание элемента другими элементами</p>
+    <br>
+    <br>
+    <p class="property">9. Есть ячейка таблицы, в ней 3 дива, в каждом диве – по слову. На первый див применен стиль <span>float: left;</span> на
+        третий – <span>float: right</span>. Что нужно применить на второй див, чтобы все три надписи/дивы были в одной горизонтальной
+        строке, то есть первый имел бы выравнивание по левому краю, третий – по правому, а второй – по центру?</p>
+    <table class="table2">
+        <tr>
+            <td>
+                <div class="div1">Слово</div>
+                <div class="div2">Слово</div>
+                <div class="div3">Слово</div>
+            </td>
+        </tr>
+    </table>
+    <p class="property">Нужно применить первому диву стиль <span>text-align: left;</span>, второму диву стиль
+        <span>float: left; text-align: center;</span>, третьему диву стиль <span>text-align: right;</span></p>
+    <br>
+    <p>10. Перечислить по пять знакомых вам псевдоклассов и псевдостилей с указанием их функционала.</p>
+    <p>Псевдоклассы:</p>
+    <ul>
+        <li>:hover - стили для элемента, на который навели курсор мыши</li>
+        <li>:focus - стили для элемента, находящегося в фокусе</li>
+        <li>:active - стили для активной ссылки</li>
+        <li>:visited - стили для ссылок, уже посещенных пользователем</li>
+        <li>:first-child - стили для первого ребенка элемента</li>
+    </ul>
+    <br>
+    <p>Псевдоэлементы:</p>
+    <ul>
+        <li>::before - для отображения контента <b>до</b> элемента селектора</li>
+        <li>::after - для отображения контента <b>после</b> элемента селектора</li>
+        <li>::first-line - стили для первой строки</li>
+        <li>::first-letter - стили для первого символа</li>
+        <li>::selection - стили к выделенному пользователем тексту</li>
+    </ul>
+    <br>
+    <p>11. Нарисовать при помощи CSS3 дом на фоне неба и плывущие облака.</p>
+    <div class="sky">
+        <div class="clouds cloud1"></div>
+        <div class="clouds cloud2"></div>
+        <div class="clouds cloud3"></div>
+        <div class="house"></div>
+    </div>
+</div>
 </body>
 </html>

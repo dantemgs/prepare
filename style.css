@@ -1,0 +1,144 @@
+*{padding: 0;margin: 0;}
+ul{
+    list-style-type: none;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.table1{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+
+}
+.table1 td{
+    border: 1px solid #000;
+}
+.link-img{
+    height: 50px;
+    border: none
+}
+.property span{
+    color: red;
+}
+a {
+    text-decoration: none;
+}
+.table2{
+    height: 50px;
+}
+.table2 div{
+    height: 100%;
+    width: 100px;
+}
+.div1{
+    border: 1px solid red;
+    float: left;
+    text-align: left
+}
+.div2{
+    border: 1px solid green;
+    float: left;
+    text-align: center;
+}
+.div3{
+    border: 1px solid blue;
+    float: right;
+    text-align: right;
+}
+.sky{
+    background-color: #6aa3ff;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.clouds{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 10px;
+    border-right: 10px solid white;
+}
+.cloud1{
+    top: 10px;
+    animation: move 5s infinite linear;
+}
+@keyframes move {
+    0% {
+        top: 10px;
+        left: 0;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.cloud2{
+    top: 40px;
+    animation: move2 4s infinite linear;
+}
+@keyframes move2 {
+    0% {
+        top: 40px;
+        left: 0;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.cloud3{
+    top: 100px;
+    animation: move3 2.5s infinite linear;
+}
+@keyframes move3 {
+    0% {
+        top: 100px;
+        left: 0;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.house{
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    position: relative;
+    margin-top: 50px;
+}
+.house:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -57px;
+    border: 25px solid transparent;
+    border-bottom: 32px solid coral;
+}
+.house:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background-color: red;
+    top: 5px;
+    left: 9px;
+}
